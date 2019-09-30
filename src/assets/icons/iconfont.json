@@ -1,0 +1,16 @@
+{
+  "id": "1441775",
+  "name": "mobile",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10391117",
+      "name": "动物 猪",
+      "font_class": "xingzhuang",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    }
+  ]
+}
