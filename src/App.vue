@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <router-view></router-view>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import AppHeader from './components/AppHeader.vue'
+import AppHeader from './components/AppHeader';
 
 export default {
   name: 'app',
@@ -17,8 +17,16 @@ export default {
 </script>
 
 <style>
-body {
+body, html {
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+#app {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: relative
 }
 </style>

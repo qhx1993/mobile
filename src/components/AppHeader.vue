@@ -4,9 +4,10 @@
     <el-drawer
       :visible.sync="drawer"
       direction="ltr"
+      :show-close="false"
       size="60%">
-      <div style="text-align: center">
-        <span class="iconfont icon-xingzhuang menu-icon"></span>
+      <div class="menu-icon">
+        <span class="iconfont icon-xingzhuang "></span>
       </div>
       <ul>
         <li><a>风格迁移</a></li>
@@ -30,7 +31,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+  .header {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+  }
   .header .btn {
+    background: none;
     border: none;
     color: #909399;
     font-size: 30px;
@@ -68,6 +75,10 @@ export default {
     background: #282828;
   }
   .el-drawer .menu-icon {
+    text-align: center;
+    margin: 40px 0 30px 0;
+  }
+  .menu-icon span{
     color: #fff;
     font-size: 44px;
   }
